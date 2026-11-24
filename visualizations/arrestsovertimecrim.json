@@ -12,7 +12,7 @@
     ]
   },
   "data": {
-    "url": "ICEtracker/data/area_chart_data.csv"
+    "url": "data/area_chart_data.csv"
   },
   "params": [
     {
