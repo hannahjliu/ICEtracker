@@ -687,13 +687,13 @@
 
         /* ===== EMBED CHARTS ===== */
         Promise.all([
-            vegaEmbed('#arrestsovertime', 'ICEtracker/visualizations/arrestsovertime.json'),
-            vegaEmbed('#aormap', 'ICEtracker/visualizations/aormap.json'),
-            vegaEmbed('#areachart', 'ICEtracker/visualizations/arrestsovertimecrim.json'),
-            vegaEmbed('#typechart', 'ICEtracker/visualizations/collateralarrests.json'),
-            vegaEmbed('#nationalities', 'ICEtracker/visualizations/topnationalities.json'),
-            vegaEmbed('#arrestviews', 'ICEtracker/visualizations/arrestsviewschart.json'),
-            vegaEmbed('#arrestcomparison', 'ICEtracker/visualizations/arrestscomparison.json')
+            vegaEmbed('#arrestsovertime', 'visualizations/arrestsovertime.json'),
+            vegaEmbed('#aormap', '/visualizations/aormap.json'),
+            vegaEmbed('#areachart', 'visualizations/arrestsovertimecrim.json'),
+            vegaEmbed('#typechart', 'visualizations/collateralarrests.json'),
+            vegaEmbed('#nationalities', 'visualizations/topnationalities.json'),
+            vegaEmbed('#arrestviews', 'visualizations/arrestsviewschart.json'),
+            vegaEmbed('#arrestcomparison', 'visualizations/arrestscomparison.json')
         ]).then(() => {
             if (window.location.hash) {
                 document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'smooth' });
